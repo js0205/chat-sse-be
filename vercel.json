@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    }
+  ],
+  "env": {
+    "DEEPSEEK_API_KEY": "$DEEPSEEK_API_KEY",
+    "NODE_ENV": "production"
+  }
+} 

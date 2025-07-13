@@ -1,5 +1,5 @@
 import axios from 'axios'; // 导入axios库，用于发送HTTP请求
-import { DEEPSEEK_API_KEY } from '../config'; // 从config文件中导入DEEPSEEK_API_KEY
+import { DEEPSEEK_API_KEY } from '@/config'; // 从config文件中导入DEEPSEEK_API_KEY
 
 const deepseekReuqest = axios.create({
   // 创建一个axios实例

@@ -1,4 +1,4 @@
-import { deepseekReuqest } from '@/utils';
+import { deepseekReuqest } from '@/utils/request';
 
 interface IChatCompletionItem {
   id: string;
@@ -18,10 +18,10 @@ const chatCompletion = async (): Promise<IChatCompletionChunk> => {
       method: 'POST',
       url: 'chat/completions'
     })
-      .then((res) => {
+      .then((res: any) => {
         resolve(res.data as IChatCompletionChunk);
       })
-      .catch((err) => {
+      .catch((err: any) => {
         reject(err);
       });
   });

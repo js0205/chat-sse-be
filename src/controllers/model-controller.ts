@@ -1,4 +1,4 @@
-import { getDeepSeekModels } from '@/apis';
+import { getDeepSeekModels } from '@/apis/models';
 const modelController = async (ctx: any) => {
   ctx.type = 'application/json';
   try {
